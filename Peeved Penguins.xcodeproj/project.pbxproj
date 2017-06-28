@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		541CCBE81F01C81200047966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCBE71F01C81200047966 /* AppDelegate.swift */; };
-		541CCBEA1F01C81200047966 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBE91F01C81200047966 /* GameScene.sks */; };
+		541CCBEA1F01C81200047966 /* Level_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBE91F01C81200047966 /* Level_1.sks */; };
 		541CCBEC1F01C81200047966 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBEB1F01C81200047966 /* Actions.sks */; };
 		541CCBEE1F01C81200047966 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCBED1F01C81200047966 /* GameScene.swift */; };
 		541CCBF01F01C81200047966 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCBEF1F01C81200047966 /* GameViewController.swift */; };
 		541CCBF31F01C81200047966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBF11F01C81200047966 /* Main.storyboard */; };
 		541CCBF51F01C81200047966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBF41F01C81200047966 /* Assets.xcassets */; };
 		541CCBF81F01C81200047966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBF61F01C81200047966 /* LaunchScreen.storyboard */; };
+		541CCC001F01D61E00047966 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 541CCBFF1F01D61E00047966 /* assets.atlas */; };
+		541CCC021F01D65000047966 /* Bear.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCC011F01D65000047966 /* Bear.sks */; };
+		541CCC041F01D7E800047966 /* CharacterActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCC031F01D7E800047966 /* CharacterActions.sks */; };
+		541CCC061F02BE3800047966 /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCC051F02BE3800047966 /* Penguin.swift */; };
+		541CCC081F02C13D00047966 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCC071F02C13D00047966 /* MainMenu.sks */; };
+		541CCC0A1F02C1BA00047966 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCC091F02C1BA00047966 /* MSButtonNode.swift */; };
+		541CCC0C1F02C33700047966 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CCC0B1F02C33700047966 /* MainMenu.swift */; };
+		541CCC0E1F030A4A00047966 /* Poof.sks in Resources */ = {isa = PBXBuildFile; fileRef = 541CCC0D1F030A4A00047966 /* Poof.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		541CCBE41F01C81200047966 /* Peeved Penguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peeved Penguins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		541CCBE71F01C81200047966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		541CCBE91F01C81200047966 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		541CCBE91F01C81200047966 /* Level_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_1.sks; sourceTree = "<group>"; };
 		541CCBEB1F01C81200047966 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		541CCBED1F01C81200047966 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		541CCBEF1F01C81200047966 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +36,15 @@
 		541CCBF41F01C81200047966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541CCBF71F01C81200047966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541CCBF91F01C81200047966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541CCBFF1F01D61E00047966 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		541CCC011F01D65000047966 /* Bear.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Bear.sks; path = ../Bear.sks; sourceTree = "<group>"; };
+		541CCC031F01D7E800047966 /* CharacterActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CharacterActions.sks; path = ../CharacterActions.sks; sourceTree = "<group>"; };
+		541CCC051F02BE3800047966 /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Penguin.swift; sourceTree = "<group>"; };
+		541CCC071F02C13D00047966 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		541CCC091F02C1BA00047966 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		541CCC0B1F02C33700047966 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		541CCC0D1F030A4A00047966 /* Poof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Poof.sks; sourceTree = "<group>"; };
+		541CCC0F1F030BA300047966 /* sfx_seal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_seal.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +77,24 @@
 		541CCBE61F01C81200047966 /* Peeved Penguins */ = {
 			isa = PBXGroup;
 			children = (
-				541CCBE71F01C81200047966 /* AppDelegate.swift */,
-				541CCBE91F01C81200047966 /* GameScene.sks */,
 				541CCBEB1F01C81200047966 /* Actions.sks */,
+				541CCBE71F01C81200047966 /* AppDelegate.swift */,
+				541CCBFF1F01D61E00047966 /* assets.atlas */,
+				541CCBF41F01C81200047966 /* Assets.xcassets */,
+				541CCC011F01D65000047966 /* Bear.sks */,
+				541CCC031F01D7E800047966 /* CharacterActions.sks */,
 				541CCBED1F01C81200047966 /* GameScene.swift */,
 				541CCBEF1F01C81200047966 /* GameViewController.swift */,
-				541CCBF11F01C81200047966 /* Main.storyboard */,
-				541CCBF41F01C81200047966 /* Assets.xcassets */,
-				541CCBF61F01C81200047966 /* LaunchScreen.storyboard */,
 				541CCBF91F01C81200047966 /* Info.plist */,
+				541CCBF61F01C81200047966 /* LaunchScreen.storyboard */,
+				541CCBE91F01C81200047966 /* Level_1.sks */,
+				541CCBF11F01C81200047966 /* Main.storyboard */,
+				541CCC071F02C13D00047966 /* MainMenu.sks */,
+				541CCC0B1F02C33700047966 /* MainMenu.swift */,
+				541CCC091F02C1BA00047966 /* MSButtonNode.swift */,
+				541CCC051F02BE3800047966 /* Penguin.swift */,
+				541CCC0D1F030A4A00047966 /* Poof.sks */,
+				541CCC0F1F030BA300047966 /* sfx_seal.caf */,
 			);
 			path = "Peeved Penguins";
 			sourceTree = "<group>";
@@ -133,8 +159,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541CCC021F01D65000047966 /* Bear.sks in Resources */,
+				541CCC081F02C13D00047966 /* MainMenu.sks in Resources */,
+				541CCC041F01D7E800047966 /* CharacterActions.sks in Resources */,
+				541CCC0E1F030A4A00047966 /* Poof.sks in Resources */,
 				541CCBF31F01C81200047966 /* Main.storyboard in Resources */,
-				541CCBEA1F01C81200047966 /* GameScene.sks in Resources */,
+				541CCBEA1F01C81200047966 /* Level_1.sks in Resources */,
+				541CCC001F01D61E00047966 /* assets.atlas in Resources */,
 				541CCBF51F01C81200047966 /* Assets.xcassets in Resources */,
 				541CCBF81F01C81200047966 /* LaunchScreen.storyboard in Resources */,
 				541CCBEC1F01C81200047966 /* Actions.sks in Resources */,
@@ -149,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				541CCBEE1F01C81200047966 /* GameScene.swift in Sources */,
+				541CCC0C1F02C33700047966 /* MainMenu.swift in Sources */,
 				541CCBF01F01C81200047966 /* GameViewController.swift in Sources */,
+				541CCC061F02BE3800047966 /* Penguin.swift in Sources */,
 				541CCBE81F01C81200047966 /* AppDelegate.swift in Sources */,
+				541CCC0A1F02C1BA00047966 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
