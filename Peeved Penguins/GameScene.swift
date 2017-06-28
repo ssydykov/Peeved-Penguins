@@ -194,6 +194,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Called before each frame is rendered
         
         moveCamera()
+        checkPenguin()
     }
     
     // Move camera method
@@ -209,6 +210,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         cameraNode.position.x = x
     }
     
+    func resetCamera(){
+        
+        let cameraReset = SKAction.move(to: CGPoint(x: 0, y: camera!.position.y),
+                                        duration: 1.5)
+        let cameraDelay = SKAction.wait(forDuration: 0.5)
+        let cameraSequence = SKAction.sequence([cameraDelay, cameraReset])
+        cameraNode.run(cameraSequence)
+        cameraTarget = nil
+    }
+    
     // Class method for loading levels
     class func loadLevel(_ levelNumber: Int) -> GameScene? {
         
@@ -220,6 +231,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scene.scaleMode = .aspectFill
         return scene
     }
+    
+    func checkPenguin(){
+        
+        guard let cameraTarget = cameraTarget else {
+            
+            return
+        }
+        
+        /* Check penguin has come to rest */
+        if cameraTarget.physicsBody!.joints.count == 0 && cameraTarget.physicsBody!.velocity.length() < 0.18 {
+            resetCamera()
+        }
+        
+        if cameraTarget.position.y < -200 {
+            cameraTarget.removeFromParent()
+            resetCamera()
+        }
+    }
 }
 
 func clamp<T: Comparable>(value: T, lower: T, upper: T) -> T {
@@ -227,4 +256,9 @@ func clamp<T: Comparable>(value: T, lower: T, upper: T) -> T {
     return min(max(value, lower), upper)
 }
 
+extension CGVector {
+    public func length() -> CGFloat {
+        return CGFloat(sqrt(dx*dx + dy*dy))
+    }
+}
 
